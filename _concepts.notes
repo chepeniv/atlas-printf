@@ -1,0 +1,43 @@
+>> Approaching a Project
+
+	1. read
+	2. rephrase
+	3. verify i/o behavior (?)
+
+	+ brainstorming cycle :
+	4. whiteboard plainspeak
+	5. walkthrough, correct
+	6. whiteboard pseudocode.
+	7. walkthrough, correct
+	8. whiteboard code.
+	9. walkthrough, correct 
+
+	+ programming cycle :
+	10. write
+	11. test
+	12. debug
+
+	- breakdown projects into the smallest units possible
+	- code each piece one at a time and debug after each small step
+
+>> Group Projects
+
+	- it is expected that our github commits not exceed a 40/60 ratio
+			- i wonder how they'd account for different commit habits ?
+			- like someone may do a bunch of little commits and someone else
+			might do a few large commits
+			+ we could balance this out with the advanced task
+				- one codes, the other helps, and we alternate accordingly
+
+>> Pair Programming - How To
+
+	+ helping someone out :
+	- give examples to illustrate concepts
+	- rephrase, breakdown, use new examples and analogies
+	- to ensure understanding ask precise, specific questions
+		- start broad/general then get more and more specific
+		- ask them to show you how to solve a similar problem
+
+>> Flowcharts
+
+	- 
