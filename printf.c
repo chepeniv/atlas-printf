@@ -6,9 +6,9 @@
 int _printf(const char *frmt_str, ...)
 {
 	int total = 0, pos = 0; /* don't count the null-byte */
-	char c;
+	char c, next;
 	char escapes[] = {'\', '%', 'n', 't', '"'};
-	char formats[] = {'c', 's', '%'};
+	char formats[] = {'c', 's', '%'}; /* create functions for each case ?? */
 
 	if (frmt_str != NULL)
 		c = frmt_str[pos];
@@ -17,23 +17,29 @@ int _printf(const char *frmt_str, ...)
 	{
 		if (c = '\')
 		{
-			/* access the following char in the string
-			 * check if it is in escapes[]
+			/* if next is in escapes :
+			 * 		total = handle_escape(next); // this function calls putchar based on next
 			 */
 		}
 		else if (c = '%')
 		{
-			/* access the following char in the string
-			 * check if it is in formats[]
+			/* if next is in escapes :
+			 * 		total = handle_format(next); // this function calls putchar based on next
 			 */
 		}
 		else
 		{
-			_putchar(c);
-			total++;
+			total += _putchar(c);
 		}
 
 		c = frmt_str[++pos];
+		next = frmt_str[pos + 1];
+
+		if (next == NULL)
+		{
+			total += _putchar(c);
+			break;
+		}
 	}
 
 	return (total);
