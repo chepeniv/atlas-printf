@@ -40,4 +40,14 @@
 
 >> Flowcharts
 
-	- 
+	+ software: libreoffice draw (this is what i'm considering) 
+	- analyze, design, document, and manage
+	- symbols: 
+		terminator, flowline, process (action), subroutine, decision/conditional;
+		data (io) [to/from process], document, database;
+		on-page connect, off-page connect, comment/annotation.
+	- practice:
+		- create before coding
+		- integrate into a README
+		- use as a representation
+		- use to troubleshoot
