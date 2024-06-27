@@ -1,3 +1,6 @@
 + (todo) writeout a collaborative git workflow
 
++ [chepe] this is the command i use everytime :
+	git pull; git add .; git commit -m "comment"; git push; git status
+
 testing being able to edit files in the repo - @SolarianVulpine 6.26.2024 8:27pm
