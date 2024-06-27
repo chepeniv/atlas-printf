@@ -1,0 +1,40 @@
+BASIC PROJECT GUIDLINES:
+
+no global variables
+no more than five functions per file
+put function signatures(prototypes) in main.h
+all header files should be include-guarded
+do not clone/fork project repos with the same name
+authorized functions and macros:
+	- write
+	- malloc, free
+	- va_start, va_end, va_copy, va_arg
+
+checker compilation:
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format \* .c
+do not push any .c files with a main() function in the root directory
+if edge-case behavior is not specified, mimic printf
+
+TASK 0 :
+	- write a function that produces output according to a format
+	- returns the number of characters printed excluding the null-byte
+	- writes to stdout
+	- `format` is of char * type
+		- contains zero or more directives
+		- handle the conversion specifiers: c, s, %
+
+	- null-mandates
+		- reproduce c's printf's buffer handling
+		- handle flag characters, field width, precission, length modifiers
+
+TASK 1 :
+	- handle the conversion specifiers: d, i
+
+	- null-mandates
+		- handle flag characters, field width, precission, length modifiers
+
+TASK 2 :
+	- create man page for _printf()
+
+ADVANCED :
+	(todo)
