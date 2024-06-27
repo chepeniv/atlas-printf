@@ -10,4 +10,7 @@
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
+	/* write(fd, *buf, count);
+	 * writes 1 byte (count) from &c (buf) to file descriptor 1 (stdout) (fd)
+	 */
 }

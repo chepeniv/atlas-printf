@@ -4,6 +4,8 @@
 - [chepe] the intention of this file is to function as a starting off point and guide
 		- we'll post todo list, issues, questions, and whatnot
 
-- [chepe] should we implement a standard for these ?? a format/layout of sorts ?
+- [chepe] should we implement a convention for these ?? 
 
-- [chepe] read over the assigned material
+- [chepe] man pages :
+	- write (2)
+	- printf (3)

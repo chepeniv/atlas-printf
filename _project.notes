@@ -11,8 +11,8 @@ authorized functions and macros:
 	- va_start, va_end, va_copy, va_arg
 
 checker compilation:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format \* .c
-do not push any .c files with a main() function in the root directory
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format \* .c
+	- do not push any .c files with a main() function in the root directory
 if edge-case behavior is not specified, mimic printf
 
 TASK 0 :
