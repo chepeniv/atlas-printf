@@ -5,10 +5,8 @@
 
 int _printf(const char *frmt_str, ...)
 {
-	int total = 0, pos = 0; /* don't count the null-byte */
+	int total = 0, pos = 0;
 	char c, next;
-	char escapes[] = {'\', '%', 'n', 't', '"'};
-	char formats[] = {'c', 's', '%'}; /* create functions for each case ?? */
 
 	if (frmt_str != NULL)
 		c = frmt_str[pos];
@@ -17,15 +15,21 @@ int _printf(const char *frmt_str, ...)
 	{
 		if (c = '\')
 		{
-			/* if next is in escapes :
-			 * 		total = handle_escape(next); // this function calls putchar based on next
-			 */
+			if (next == '\' || /* move this code into handle_escape()? */
+				next == '%' ||
+				next == '"' ||
+				next == 'n' ||
+				next == 't')
+			{
+				 /*total = handle_escape(next); // this function calls putchar based on next */
+			}
 		}
 		else if (c = '%')
 		{
-			/* if next is in escapes :
-			 * 		total = handle_format(next); // this function calls putchar based on next
-			 */
+			if (next == 'c' || /* move this code into handle_format()? */
+				next == 's' ||
+				next == '%' ||)
+				 /* total = handle_format(next); // this function calls putchar based on next */
 		}
 		else
 		{
