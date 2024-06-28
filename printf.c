@@ -7,7 +7,8 @@ int _printf(const char *fstr, ...)
 {
 	int total = -1, pos = 0;
 	char current, next, print;
-	va_list flist;
+	va_list flist, fldup;
+	void *param;
 
 	if (fstr == NULL)
 		return (total);
@@ -25,10 +26,12 @@ int _printf(const char *fstr, ...)
 	{
 		if (current == '%')
 		{
-			if (next == 'c'
+			if (next == 'c' ||
 				next == 's')
-			}
-				total += handle_format(next, flist);
+			{
+				/* i wonder if this is legal */
+				param = va_arg(flist, void *);
+				total += handle_format(next, param);
 			}
 			else
 			{
@@ -48,7 +51,6 @@ int _printf(const char *fstr, ...)
 
 	total += _putchar(current);
 	total += _putchar(next);
-
 	va_end(flist);
 	return (total);
 }
