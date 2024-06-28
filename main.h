@@ -1,7 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+typedef struct _formater {
+	char type;
+	int (*printer)(void *);
+} formater;
+
 int _printf(const char *format, ...);
 int _putchar(char c);
+int print_char(void *param);
+int print_str(void *param);
 
 #endif
+

@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdarg.c>
 #include <stdlib.c>
-/* we don't need to handle flag characters, field width, precission, length modifiers */
 
 int _printf(const char *fstr, ...)
 {
@@ -29,7 +28,6 @@ int _printf(const char *fstr, ...)
 			if (next == 'c' ||
 				next == 's')
 			{
-				/* i wonder if this is legal */
 				param = va_arg(flist, void *);
 				total += handle_format(next, param);
 			}

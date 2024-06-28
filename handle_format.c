@@ -1,7 +1,4 @@
-typedef struct _formater {
-	char type;
-	int (*printer)(void *);
-} formater;
+#include "main.h"
 
 int handle_format(char next, void *param)
 {
@@ -12,7 +9,6 @@ int handle_format(char next, void *param)
 	formater printfuncs[] = {
 		{'c', print_char},
 		{'s', print_str},
-		{NULL, NULL}
 	};
 
 	while (i < 3)
@@ -25,9 +21,7 @@ int handle_format(char next, void *param)
 		i++;
 	}
 
-	p(param);
+	total += p(param);
 
 	return (total);
 }
-
-//int (*get_op_func(char *s))(int, int);
