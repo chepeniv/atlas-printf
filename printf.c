@@ -5,25 +5,30 @@
 
 int _printf(const char *fstr, ...)
 {
-	int total = 0, pos = 0;
+	int total = -1, pos = 0;
 	char current, next, print;
-	va_list flist, flistcopy;
+	va_list flist;
 
 	if (fstr == NULL)
-		return (-1);
+		return (total);
 
 	current = fstr[pos];
-	va_start(flist, fstr);
+	if (current == '\0')
+	{
+		total +=_putchar(current);
+		return (total);
+	}
 
-	while (current != '\0')
+	next = fstr[pos + 1];
+	va_start(flist, fstr);
+	while (next != '\0')
 	{
 		if (current == '%')
 		{
 			if (next == 'c'
 				next == 's')
 			}
-				va_copy(flistcopy, flist);
-				total += handle_format(next, flistcopy);
+				total += handle_format(next, flist);
 			}
 			else
 			{
@@ -36,15 +41,13 @@ int _printf(const char *fstr, ...)
 		else
 			total += _putchar(current);
 
-		current = fstr[++pos];
+		pos++;
+		current = fstr[pos];
 		next = fstr[pos + 1];
-
-		if (next == NULL)
-		{
-			total += _putchar(current);
-			break;
-		}
 	}
+
+	total += _putchar(current);
+	total += _putchar(next);
 
 	va_end(flist);
 	return (total);
