@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdarg.c> /*variadic function macros */
+#include <stdarg.c>
 #include <stdlib.c> /*dynamic memory mgmt */
-/* #include <unistd.h> // write() function -- used by putchar.c */
 
-int _printf(const char *frmt_str, ...)
+int _printf(const char *frmt_str, ...) /* add variadic function code */
 {
 	int total = 0, pos = 0;
 	char c, next;
@@ -16,25 +15,22 @@ int _printf(const char *frmt_str, ...)
 		if (c = '\')
 		{
 			if (next == '\' || /* move this code into handle_escape()? */
-				next == '%' ||
+				next == '%' || /* i realized, handling '\' might not be necessary ?? */
 				next == '"' ||
 				next == 'n' ||
 				next == 't')
-			{
-				 /*total = handle_escape(next); // this function calls putchar based on next */
-			}
+				 /*total += handle_escape(next); // this function calls putchar based on next */
 		}
 		else if (c = '%')
 		{
 			if (next == 'c' || /* move this code into handle_format()? */
 				next == 's' ||
 				next == '%' ||)
-				 /* total = handle_format(next); // this function calls putchar based on next */
+				 /* get the next argument and pass it to handle_format() */
+				 /* total += handle_format(next); // this function calls putchar based on next */
 		}
 		else
-		{
 			total += _putchar(c);
-		}
 
 		c = frmt_str[++pos];
 		next = frmt_str[pos + 1];
@@ -48,8 +44,4 @@ int _printf(const char *frmt_str, ...)
 
 	return (total);
 }
-
-/* null-mandates (things we don't need to do)
- * 		reproduce c's printf's buffer handling
- * 		handle flag characters, field width, precission, length modifiers
- */
+/* we don't need to handle flag characters, field width, precission, length modifiers */
