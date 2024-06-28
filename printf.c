@@ -9,19 +9,12 @@ int _printf(const char *frmt_str, ...) /* add variadic function code */
 
 	if (frmt_str != NULL)
 		c = frmt_str[pos];
+	else
+		return (-1);
 
 	while (c != '\0')
 	{
-		if (c = '\')
-		{
-			if (next == '\' || /* move this code into handle_escape()? */
-				next == '%' || /* i realized, handling '\' might not be necessary ?? */
-				next == '"' ||
-				next == 'n' ||
-				next == 't')
-				 /*total += handle_escape(next); // this function calls putchar based on next */
-		}
-		else if (c = '%')
+		if (c = '%')
 		{
 			if (next == 'c' || /* move this code into handle_format()? */
 				next == 's' ||
