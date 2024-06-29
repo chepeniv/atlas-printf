@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+#include <stdlib.h>
 
 int handle_format(char next, void *param)
 {

@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdarg.c>
-#include <stdlib.c>
+#include <stdarg.h>
+#include <stdlib.h>
 
 int _printf(const char *fstr, ...)
 {

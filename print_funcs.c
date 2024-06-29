@@ -1,11 +1,10 @@
-typedef struct _formater {
-	char type;
-	int (*printer)(void *);
-} formater;
+#include "main.h"
+#include <stdarg.h>
+#include <stdlib.h>
 
 int print_char(void *param)
 {
-	char c = (char) *param;
+	char c = (char *) param;
 	return (_putchar(c));
 }
 
