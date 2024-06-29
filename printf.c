@@ -14,13 +14,8 @@ int _printf(const char *fstr, ...)
 		return (-1);
 
 	current = fstr[pos];
-	/*
 	if (current == '\0')
-	{
-		total += _putchar(current);
 		return (total);
-	}
-	*/
 
 	next = fstr[pos + 1];
 	va_start(flist, fstr);
@@ -51,7 +46,7 @@ int _printf(const char *fstr, ...)
 	}
 
 	total += _putchar(current);
-	/*total += _putchar(next);*/
+
 	va_end(flist);
 	return (total);
 }
