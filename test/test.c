@@ -22,6 +22,7 @@ int main(void)
 	_printf("%%");
 	_printf("%");
 	_printf("%c", '\0');
+	_printf("\n");
 
 	/*
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");

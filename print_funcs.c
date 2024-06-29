@@ -9,9 +9,17 @@ int print_char(void *param)
 	c = malloc(sizeof(void*));
 	*c = (size_t) param;
 
-	_putchar(c[0]);
-	free(c);
-	return 1;
+	if (c[0] != '\0')
+	{
+		_putchar(c[0]);
+		free(c);
+		return 1;
+	}
+	else
+	{
+		free(c);
+		return 0;
+	}
 }
 
 int print_str(void *param)
