@@ -4,16 +4,24 @@
 
 int main(void)
 {
+	int len, len2;
 	/*
-	int len;
 	unsigned int ui;
 	void *addr;
 	ui = (unsigned int)INT_MAX + 1024;
 	addr = (void *)0x7ffe637541f0;
 	*/
 
-	_printf("Let's try to printf a simple sentence.\n");
-	_printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
+	len = _printf("Let's try to printf a simple sentence.\n");
+	len2 = printf("Let's try to printf a simple sentence.\n");
+
+	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+
+	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
+	len2 = printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
+
+	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+
 	_printf("Percent:[%%]\n");
 	_printf("Unknowns:[%r%q%>]\n");
 	_printf("Character:[%c, %c, %c]\n", 'H', 'J', 'K');

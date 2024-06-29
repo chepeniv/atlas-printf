@@ -16,7 +16,7 @@ int _printf(const char *fstr, ...)
 	current = fstr[pos];
 	if (current == '\0')
 	{
-		total +=_putchar(current);
+		total += _putchar(current);
 		return (total);
 	}
 
