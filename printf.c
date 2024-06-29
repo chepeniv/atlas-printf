@@ -1,3 +1,4 @@
+/* @Torin go ahead and add betty commments to the functions and structs in the code*/
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
@@ -5,8 +6,8 @@
 int _printf(const char *fstr, ...)
 {
 	int total = -1, pos = 0;
-	char current, next, print;
-	va_list flist, fldup;
+	char current, next;
+	va_list flist;
 	void *param;
 
 	if (fstr == NULL)

@@ -11,6 +11,7 @@ int _putchar(char c);
 int handle_format(char next, void *param);
 int print_char(void *param);
 int print_str(void *param);
+char *_strdup(char *original);
 
 #endif
 

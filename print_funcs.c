@@ -1,10 +1,14 @@
+/* @Torin go ahead and add betty commments to the functions and structs in the code*/
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int print_char(void *param)
 {
 	char c = (char *) param;
+
+	/*printf("CHECK: assigned char *c\n");*/
 	return (_putchar(c));
 }
 
