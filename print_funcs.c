@@ -3,14 +3,15 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int print_char(void *param)
 {
-	char *cptr = (char *) param;
-	char c = *cptr;
+	long int c;
+	c = (long int) param;
 
-	/*printf("CHECK: assigned char *c\n");*/
-	return (_putchar(c));
+	return _putchar(c);
+	/*(write(filedesc, &c, bytes));*/
 }
 
 int print_str(void *param)
