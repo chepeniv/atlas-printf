@@ -49,7 +49,7 @@ int _printf(const char *fstr, ...)
 	}
 
 	total += _putchar(current);
-	total += _putchar(next);
+	/*total += _putchar(next);*/
 	va_end(flist);
 	return (total);
 }
