@@ -6,7 +6,8 @@
 
 int print_char(void *param)
 {
-	char c = (char *) param;
+	char *cptr = (char *) param;
+	char c = *cptr;
 
 	/*printf("CHECK: assigned char *c\n");*/
 	return (_putchar(c));
