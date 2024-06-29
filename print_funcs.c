@@ -2,15 +2,14 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
 
 int print_char(void *param)
 {
-	long int c;
-	c = (long int) param;
+	char *c;
+	c = malloc(sizeof(void*));
+	*c = (size_t) param;
 
-	return _putchar(c);
+	return _putchar(c[0]);
 	/*(write(filedesc, &c, bytes));*/
 }
 
