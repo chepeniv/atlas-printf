@@ -12,17 +12,16 @@ int main(void)
 	addr = (void *)0x7ffe637541f0;
 	*/
 
-	len = _printf("the quick brown fox jumped over the lazy dog.1\n");
-	len2 = printf("the quick brown fox jumped over the lazy dog.2\n");
+	len = _printf("the quick brown fox jumped over the lazy dog.A\n");
+	len2 = printf("the quick brown fox jumped over the lazy dog.B\n");
 	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
 
-	len = _printf("A");
-	len2 = printf("B");
-	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
-
-	len = _printf("\0");
-	len2 = printf("\0");
-	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+	_printf("A");
+	_printf("\0");
+	_printf("%c", 'S');
+	_printf("%%");
+	_printf("%");
+	_printf("%c", '\0');
 
 	/*
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
