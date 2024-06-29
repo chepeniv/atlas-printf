@@ -9,8 +9,9 @@ int print_char(void *param)
 	c = malloc(sizeof(void*));
 	*c = (size_t) param;
 
-	return _putchar(c[0]);
-	/*(write(filedesc, &c, bytes));*/
+	_putchar(c[0]);
+	free(c);
+	return 1;
 }
 
 int print_str(void *param)
