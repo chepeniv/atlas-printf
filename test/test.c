@@ -12,11 +12,19 @@ int main(void)
 	addr = (void *)0x7ffe637541f0;
 	*/
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
-
+	len = _printf("the quick brown fox jumped over the lazy dog.1\n");
+	len2 = printf("the quick brown fox jumped over the lazy dog.2\n");
 	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
 
+	len = _printf("A");
+	len2 = printf("B");
+	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+
+	len = _printf("\0");
+	len2 = printf("\0");
+	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+
+	/*
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
 	len2 = printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
 
@@ -26,7 +34,6 @@ int main(void)
 	_printf("Unknowns:[%r%q%>]\n");
 	_printf("Character:[%c, %c, %c]\n", 'H', 'J', 'K');
 
-	/*
 	_printf("Length:[%d, %i]\n", len, len);
 	_printf("Negative:[%d]\n", -762534);
 	_printf("Unsigned:[%u]\n", ui);
