@@ -4,37 +4,37 @@
 
 int main(void)
 {
-	int len, len2;
 	/*
+	int len, len2;
 	unsigned int ui;
 	void *addr;
 	ui = (unsigned int)INT_MAX + 1024;
 	addr = (void *)0x7ffe637541f0;
-	*/
 
 	len = _printf("the quick brown fox jumped over the lazy dog.A\n");
 	len2 = printf("the quick brown fox jumped over the lazy dog.B\n");
 	printf("_printf: %d chars ; printf: %d chars\n", len, len2);
+	*/
 
-	printf("1: A\n");
+	_printf("1: A : ");
 	_printf("A");
 
-	printf("2: null\n");
+	_printf("\n2: null : ");
 	_printf("\0");
 
-	printf("3: S\n");
+	_printf("\n3: S : ");
 	_printf("%c", 'S');
 
-	printf("4: %\n");
+	_printf("\n4: % : ");
 	_printf("%%");
 
-	printf("5: %\n");
+	_printf("\n5: % : ");
 	_printf("%");
 
-	printf("6: null\n");
+	_printf("\n6: null : ");
 	_printf("%c", '\0');
 
-	printf("7: newline\n");
+	_printf("\n7: newline : ");
 	_printf("\n");
 
 	/*

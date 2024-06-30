@@ -15,24 +15,26 @@ int _printf(const char *fstr, ...)
 
 	current = fstr[pos];
 	if (current == '\0')
-		return (total);
+		return (0);
 
-	next = fstr[pos + 1];
 	va_start(flist, fstr);
-	while (next != '\0')
+	while (current != '\0')
 	{
 		if (current == '%')
 		{
+			next = fstr[pos + 1];
 			if (next == 'c' ||
 				next == 's')
 			{
 				param = va_arg(flist, void *);
 				total += handle_format(next, param);
 			}
+			else if (next == '\0')
+				return (0);
 			else
 			{
 				total += _putchar(current);
-				if (next != '%')
+				if (next != '%' && next != '\0')
 					total += _putchar(next);
 			}
 			pos++;
@@ -42,10 +44,7 @@ int _printf(const char *fstr, ...)
 
 		pos++;
 		current = fstr[pos];
-		next = fstr[pos + 1];
 	}
-
-	total += _putchar(current);
 
 	va_end(flist);
 	return (total);
