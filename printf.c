@@ -30,8 +30,10 @@ int _printf(const char *fstr, ...)
 				total += handle_format(next, param);
 			}
 			else if (next == '\0')
+			{
 				total += _putchar(current);
 				return (total);
+			}
 			else
 			{
 				total += _putchar(current);
