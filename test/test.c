@@ -37,6 +37,9 @@ int main(void)
 	_printf("\n7: newline : ");
 	_printf("\n");
 
+	_printf("\n7: (char *) 0: ");
+	_printf("%s\n", (char *) 0);
+
 	/*
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
 	len2 = printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");

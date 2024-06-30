@@ -28,6 +28,9 @@ int print_str(void *param)
 	int i = 0, total = 0;
 	char *cstr = (char *) param;
 
+	if (cstr == (char *) 0)
+		cstr = "(null)";
+
 	while (cstr[i] != '\0')
 	{
 		c = cstr[i];
