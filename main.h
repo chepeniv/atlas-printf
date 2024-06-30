@@ -13,6 +13,7 @@ int print_char(void *param);
 int print_str(void *param);
 int print_dec(void *param);
 int print_int(int n);
+int print_neg(int n);
 
 #endif
 

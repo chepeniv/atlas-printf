@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 int main(void)
 {
-	int len, len2;
 	/*
+	int len, len2;
 	unsigned int ui;
 	void *addr;
 	ui = (unsigned int)INT_MAX + 1024;
@@ -27,7 +28,6 @@ int main(void)
 	_printf("\n4: % : ");
 	_printf("%%");
 
-	*/
 	_printf("----");
 	_printf("\n5: % : ");
 	_printf("%");
@@ -36,13 +36,11 @@ int main(void)
 	_printf("%c", '\0');
 	_printf("\n----\n");
 
-	/*
 	_printf("\n7: newline : ");
 	_printf("\n");
 
 	_printf("\n7: (char *) 0: ");
 	_printf("%s\n", (char *) 0);
-	*/
 
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
 	len2 = printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
@@ -56,6 +54,14 @@ int main(void)
 	_printf("Length:[%d, %i]\n", len, len);
 	_printf("Negative:[%d]\n", -762534);
 	_printf("Len:[%d]\n", len);
+	*/
+
+	_printf("my MAX:[%d]\n", INT_MAX);
+	_printf("my MIN:[%d]\n", INT_MIN);
+
+	printf("MAX:[%d]\n", INT_MAX);
+	printf("MIN:[%d]\n", INT_MIN);
+
 	/*
 	_printf("Unsigned octal:[%o]\n", ui);
 	_printf("Unsigned:[%u]\n", ui);

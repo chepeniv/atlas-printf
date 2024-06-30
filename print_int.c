@@ -13,7 +13,9 @@ int print_int(int n)
 	if (n < 0)
 	{
 		total += _putchar('-');
-		n = -n;
+		total += print_int(-(n / 10));
+		total += _putchar(-(n % 10) + '0');
+		return total;
 	}
 	if (n == 0)
 	{
