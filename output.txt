@@ -1,11 +1,4 @@
-the quick brown fox jumped over the lazy dog.1
-Athe quick brown fox jumped over the lazy dog.2
-
-_printf: 47 chars ; printf: 47 chars
-
-B
-_printf: 1 chars ; printf: 1 chars
-
-
-_printf: 0 chars ; printf: 0 chars
-
+----
+5: % : %
+6: null : 
+----
