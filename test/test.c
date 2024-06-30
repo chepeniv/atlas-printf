@@ -27,15 +27,14 @@ int main(void)
 
 	_printf("\n4: % : ");
 	_printf("%%");
-
-	_printf("----");
-	_printf("\n5: % : ");
-	_printf("%");
-
-	_printf("\n6: null : ");
+	*/
+	_printf("null : ");
 	_printf("%c", '\0');
-	_printf("\n----\n");
 
+	_printf("\n% : ");
+	_printf("%");
+	_printf("\n");
+	/*
 	_printf("\n7: newline : ");
 	_printf("\n");
 

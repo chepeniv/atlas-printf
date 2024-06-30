@@ -3,6 +3,13 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
+/**
+ * handle_format - deterimines which printing function to call
+ * @next: the char by which the function to be called is decided
+ * @param: a null pointer to be passed onto the function called
+ *
+ * Return: the total number of chars printed by the function called
+ */
 int handle_format(char next, void *param)
 {
 	int total = 0;
