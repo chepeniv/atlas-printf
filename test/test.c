@@ -58,6 +58,7 @@ int main(void)
 
 	_printf("my MAX:[%d]\n", INT_MAX);
 	_printf("my MIN:[%d]\n", INT_MIN);
+	_printf("MIN + MAX = -1:%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
 
 	printf("MAX:[%d]\n", INT_MAX);
 	printf("MIN:[%d]\n", INT_MIN);
