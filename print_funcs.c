@@ -40,3 +40,9 @@ int print_str(void *param)
 
 	return (total);
 }
+
+int print_dec(void *param)
+{
+	int n = (size_t) param;
+	return print_int(n);
+}

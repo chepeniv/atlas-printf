@@ -24,7 +24,9 @@ int _printf(const char *fstr, ...)
 		{
 			next = fstr[pos + 1];
 			if (next == 'c' ||
-				next == 's')
+				next == 's' ||
+				next == 'd' ||
+				next == 'i')
 			{
 				param = va_arg(flist, void *);
 				total += handle_format(next, param);

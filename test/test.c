@@ -4,8 +4,8 @@
 
 int main(void)
 {
-	/*
 	int len, len2;
+	/*
 	unsigned int ui;
 	void *addr;
 	ui = (unsigned int)INT_MAX + 1024;
@@ -42,6 +42,7 @@ int main(void)
 
 	_printf("\n7: (char *) 0: ");
 	_printf("%s\n", (char *) 0);
+	*/
 
 	len = _printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
 	len2 = printf("Strings:[%s -- %s]\n", "I am a string!", "i am another string!");
@@ -54,12 +55,12 @@ int main(void)
 
 	_printf("Length:[%d, %i]\n", len, len);
 	_printf("Negative:[%d]\n", -762534);
-	_printf("Unsigned:[%u]\n", ui);
+	_printf("Len:[%d]\n", len);
+	/*
 	_printf("Unsigned octal:[%o]\n", ui);
+	_printf("Unsigned:[%u]\n", ui);
 	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 	_printf("Address:[%p]\n", addr);
-	_printf("Len:[%d]\n", len);
 	*/
-
 	return (0);
 }
