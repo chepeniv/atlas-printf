@@ -14,14 +14,27 @@ int main(void)
 
 	len = _printf("the quick brown fox jumped over the lazy dog.A\n");
 	len2 = printf("the quick brown fox jumped over the lazy dog.B\n");
-	printf("\n_printf: %d chars ; printf: %d chars\n\n", len, len2);
+	printf("_printf: %d chars ; printf: %d chars\n", len, len2);
 
+	printf("1: A\n");
 	_printf("A");
+
+	printf("2: null\n");
 	_printf("\0");
+
+	printf("3: S\n");
 	_printf("%c", 'S');
+
+	printf("4: %\n");
 	_printf("%%");
+
+	printf("5: %\n");
 	_printf("%");
+
+	printf("6: null\n");
 	_printf("%c", '\0');
+
+	printf("7: newline\n");
 	_printf("\n");
 
 	/*

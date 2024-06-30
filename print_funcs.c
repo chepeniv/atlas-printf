@@ -5,21 +5,21 @@
 
 int print_char(void *param)
 {
-	char *c;
-	c = malloc(sizeof(void*));
-	*c = (size_t) param;
+	char *cptr;
+	char c;
 
-	if (c[0] != '\0')
+	cptr = malloc(sizeof(void*));
+	*cptr = (size_t) param;
+	c = *cptr;
+	free(cptr);
+
+	if (c != '\0')
 	{
-		_putchar(c[0]);
-		free(c);
+		_putchar(c);
 		return 1;
 	}
 	else
-	{
-		free(c);
 		return 0;
-	}
 }
 
 int print_str(void *param)
