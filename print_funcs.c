@@ -13,14 +13,8 @@ int print_char(void *param)
 	c = *cptr;
 	free(cptr);
 
-	/*if (c != '\0')
-	{} */
-		_putchar(c);
-		return 1;
-	/*
-	else
-		return 0;
-	*/
+	_putchar(c);
+	return 1;
 }
 
 int print_str(void *param)

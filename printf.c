@@ -33,10 +33,6 @@ int _printf(const char *fstr, ...)
 			}
 			else if (next == '\0')
 			{
-				/*
-				total += _putchar(current);
-				break;
-				*/
 				return (-1);
 			}
 			else
