@@ -1,0 +1,60 @@
+ITEM                        Atlas Programmer's Manual                        ITEM
+
+NAME
+       printf - formatted output conversion
+
+SYNOPSIS
+       #include <stdio.h>
+
+       int printf(const char *format, ...);
+
+DESCRIPTION
+       [insert description paragraph]
+
+   Flag characters
+       (unimplemented)
+
+   Field width
+       (unimplemented)
+
+   Precision
+       (unimplemented)
+
+   Length modifier
+       (unimplemented)
+
+   Conversion specifiers
+       A  character  that  specifies  the type of conversion to be applied.  The conversion
+       specifiers and their meanings are:
+
+       d, i   decimal, integer
+
+       c   	  char
+
+       s   	  string
+
+RETURN VALUE
+       Upon successful return, these functions return the number of characters printed (ex‐
+       cluding the null byte used to end output to strings).
+
+ATTRIBUTES
+
+CONFORMING TO
+       Betty Style, Nicole Standars
+
+NOTES
+       Some programs imprudently rely on code such as the following
+
+BUGS
+       Because sprintf() and vsprintf() assume an arbitrarily long string, callers must  be
+
+EXAMPLES
+       To print Pi to five decimal places:
+
+SEE ALSO
+       printf(1), printf(3)
+
+COLOPHON
+       This page is part of release 5.10 of the Linux man-pages project.  A description  of
+
+TEAM MEMBERS                          2024-07-01                               PRINTF(3)
