@@ -69,6 +69,9 @@ int print_str(void *param)
  * print_int to actually print the value.
  * 
  * @param: pointer to the integer value to be printed
+ * 
+ * Return: returns the result of print_int with the cast value
+ * of this function
  */
 int print_dec(void *param)
 {
