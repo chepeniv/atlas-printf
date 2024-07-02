@@ -68,6 +68,7 @@ int print_str(void *param)
  * it treats it as an integer to be printed. This function calls
  * print_int to actually print the value.
  * 
+ * @param: pointer to the integer value to be printed
  */
 int print_dec(void *param)
 {
