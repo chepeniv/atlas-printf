@@ -15,6 +15,7 @@
  * 
  * @fstr: a pointer to the format string which the _printf function acts upon
  * 
+ * Return: returns the number of characters printed, not including the '\0'
  */
 int _printf(const char *fstr, ...)
 {
