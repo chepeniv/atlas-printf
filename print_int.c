@@ -2,10 +2,12 @@
 
 /**
  * print_int - printout number to terminal using _putchar
+ *
  * @n: the number to print
  *
  * Return: void
  */
+
 int print_int(int n)
 {
 	int total = 0;
