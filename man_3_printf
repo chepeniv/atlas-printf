@@ -51,7 +51,7 @@ Betty Style, Nicole Standards
 This implementation of printf came about as a group project for first trimester students at Tulsa Atlas School.
 
 .SH BUGS
-Since behaviour pretty much duplicates regular printf, any of its bugs are pretty much guaranteed to be
+Considering the function shares behaviour with regular printf, any of the standard printf bugs are likely to be
 duplicated as well. There may exist other bugs, but they remain to be discovered.
 
 .SH EXAMPLES
