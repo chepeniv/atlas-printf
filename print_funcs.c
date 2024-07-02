@@ -5,6 +5,11 @@
 
 /**
  * print_char - prints a single character
+ *
+ * Description: This function takes a character, allocates memory
+ * for the character's value, the prints the character when necessary in
+ * the _printf function. After printing, the memory is then freed.
+ *
  */
 
 int print_char(void *param)
