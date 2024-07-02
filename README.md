@@ -9,6 +9,8 @@ Description: Our task was to write a local version of the standard library’s p
 
 While the original printf uses a switch-case, our version calls a function that iterates through an array of structs. This emulates the behavior of a switch-case.
 
+_printf will return the number of characters printed, not including the '\0'
+
 Flowchart: Attached below is a flowchart following the step by step process in which our Printf mimic runs.
 ![printf-presentation-flowchart](https://github.com/chepeniv/atlas-printf/assets/155486318/46540ef5-4d67-4718-aafa-8dc550688ee6)
 
