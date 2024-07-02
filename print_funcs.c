@@ -29,6 +29,9 @@ int print_char(void *param)
 	return (1);
 }
 
+/**
+ * print_str - prints a string
+ */
 int print_str(void *param)
 {
 	char c;
