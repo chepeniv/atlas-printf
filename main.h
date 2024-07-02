@@ -6,6 +6,8 @@
  * it sets a char for expected type and points to a printer function
  * 
  * @type: the character indicating format/ datatype
+ * 
+ * @printer: pointer to function that prints as applicable by type
  */
 typedef struct _formater {
 	char type;
