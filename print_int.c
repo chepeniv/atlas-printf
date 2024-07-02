@@ -23,7 +23,7 @@ int print_int(int n)
 	if (n == 0)
 	{
 		total += _putchar('0');
-		return total;
+		return (total);
 	}
 	if (n / 10)
 	{
@@ -31,5 +31,5 @@ int print_int(int n)
 	}
 
 	total += _putchar(n % 10 + '0');
-	return total;
+	return (total);
 }
