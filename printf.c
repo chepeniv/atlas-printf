@@ -3,6 +3,10 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
+/**
+ * _printf - the main function that aims to recreate
+ * the standard printf function.
+ */
 int _printf(const char *fstr, ...)
 {
 	int total = 0, pos = 0;
