@@ -3,6 +3,10 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
+/**
+ * print_char - prints a single character
+ */
+
 int print_char(void *param)
 {
 	char *cptr;

@@ -5,6 +5,7 @@
 
 /**
  * handle_format - deterimines which printing function to call
+ *
  * @next: the char by which the function to be called is decided
  * @param: a null pointer to be passed onto the function called
  *

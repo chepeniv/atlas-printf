@@ -17,6 +17,7 @@
  * 
  * Return: returns the number of characters printed, not including the '\0'
  */
+
 int _printf(const char *fstr, ...)
 {
 	int total = 0, pos = 0;
