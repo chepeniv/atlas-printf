@@ -64,6 +64,10 @@ int print_str(void *param)
 /**
  * print_dec - prints an int as a decimal
  * 
+ * Description: The function has a param of a pointer to an int
+ * it treats it as an integer to be printed. This function calls
+ * print_int to actually print the value.
+ * 
  */
 int print_dec(void *param)
 {
