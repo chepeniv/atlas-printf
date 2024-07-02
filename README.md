@@ -8,3 +8,5 @@ Description: Our task was to write a local version of the standard library’s p
 %i - integer
 
 While the original printf uses a switch-case, our version calls a function that iterates through an array of structs. This emulates the behavior of a switch-case.
+
+Flowchart: Attached below is a flowchart following the step by step process in which our Printf mimic runs.
