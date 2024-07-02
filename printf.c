@@ -13,6 +13,7 @@
  * It handles special characters depending on their type. (as indicated by
  * the character specifiers)
  * 
+ * @fstr: a pointer to the format string which the _printf function acts upon
  * 
  */
 int _printf(const char *fstr, ...)
