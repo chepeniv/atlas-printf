@@ -36,6 +36,8 @@ int print_char(void *param)
  * if the string is NULL it prints "(null)"
  * This function iterates through the string one character at a time
  * and prints them using _putchar.
+ * 
+ * Return: The function return the number of characters printed
  */
 int print_str(void *param)
 {
