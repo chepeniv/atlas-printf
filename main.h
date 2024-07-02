@@ -9,6 +9,7 @@
  * 
  * @printer: pointer to function that prints as applicable by type
  */
+
 typedef struct _formater
 {
 	char type;
