@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/**
+ * struct_formater - this is a struct to be utilized in our code
+ * it sets a char for expected type and points to a printer function
+ * 
+ */
 typedef struct _formater {
 	char type;
 	int (*printer)(void *);

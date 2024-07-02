@@ -11,6 +11,7 @@
  *
  * Return: the total number of chars printed by the function called
  */
+
 int handle_format(char next, void *param)
 {
 	int total = 0;
