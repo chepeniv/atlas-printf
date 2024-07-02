@@ -1,4 +1,3 @@
-/* @Torin go ahead and add betty commments to the functions and structs in the code*/
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
