@@ -1,70 +1,70 @@
 .\" Copyright (c) 2024 by Jose N. Olmos (jose.n.olmos@outlook.com)
-.TH ITEM 0  2024-07-01 "TEAM MEMBERS" "Atlas Programmer's Manual"
+.TH _PRINTF 0  2024-07-01 "CHEPE, TORIN" "Atlas Programmer's Manual"
 
 .SH NAME
-item \- quick ref
+_printf \- a minimal emulation of the classic printf function.
 
 .SH SYNOPSIS
 .nf
-.B #include <stdlib.h>
+.B #include <main.h>
 .PP
-.BI "int func(int " c ");
+.BI "int _printf(const char *" format " ...); "
 .fi
 
 .SH DESCRIPTION
-description
+This minimal implementation of printf takes a mandatory format string and optional arguments that are printed out to stdout in accordance with what the format string dictates. It returns an positive int upon success.
 
-.SS Subsection
-subsection text
+.SS Flag characters
+(unimplemented)
 
-.EX
-an example where code would be written out. followed by (EE) example end
-.EE
+.SS Field width
+(unimplemented)
 
-.RS -4
-Relative (Indent -4) Start
-.RE
-.PP
-regular paragraph
-.RS 4
-Relative (Indent 4) Start
-.RE
+.SS Precision
+(unimplemented)
 
-.TP 4
-tagged paragraph
+.SS Length modifiers
+(unimplemented)
 
+.SS Conversion specifiers
+In the format string after each % if one of the following characters is encountered then _printf will attempt to print out the type specified by the letter from. 
 .TP
-.B o
-description of option o.
+.BR d , " i"
+these specifiers tell printf to take the next argument and output it as a base-ten numeral 
 .TP
-.B A
-description of option A.
+.B c
+this specifier tells printf to take the next argument and output it as a character
+.TP
+.B s
+this specifier tells printf to take the next argument and output it as a string
 
 .SH RETURN VALUE
-return value
-
-.SH ATTRIBUTES
-attributes
+Our implementation, upon successful write-out to stdout, will simply return the total number of characters printed excluding the null-byte. If an error occurs, then _printf will just return \-1.
 
 .SH CONFORMING TO
 Betty Style, Nicole Standards
 
 .SH NOTES
-notes
-.B bold text
-.BI "alternate bold "and " then "italic
-.BR alternate bold and then regular
-.IR alternate italic and then regular
-.I just an italic sentence
+This implementation of printf came about as a group project for first trimester students at Tulsa Atlas School.
 
 .SH BUGS
-bugs
+Since behaviour pretty much duplicates regular printf, any of its bugs are pretty much guaranteed to be duplicated as well. There may exist other bugs, but they remain to be discovered.
 
 .SH EXAMPLES
-examples
+the following would output string formated with a char, string, and two integers to stdout :
+
+.EX
+	#include "main.h"
+
+	int main(void)
+	{
+		int len;
+
+		len = _printf("outputs: %c; %s; %d; %i\n", 'A', "tqbfjotld", 98, INT_MIN);
+
+		return (int);
+	}
+.EE
 
 .SH SEE ALSO
-.BR otheritem (0),
-
-.SH COLOPHON
-colophon
+.BR printf "(3), " printf "(1), " puts (3)
