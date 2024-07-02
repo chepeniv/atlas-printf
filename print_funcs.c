@@ -11,6 +11,8 @@
  * the _printf function. After printing, the memory is then freed.
  *
  * @param: pointer to printable character
+ * 
+ * Return: returns 1 on success
  */
 
 int print_char(void *param)
