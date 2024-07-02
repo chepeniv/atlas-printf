@@ -9,6 +9,11 @@
  * 
  * Description: Function _printf is designed to mimic standard printf.
  * It is built to handle specifying tokens %s, %d, %c, and %i.
+ * The function iterates through the input string character by character.
+ * It handles special characters depending on their type. (as indicated by
+ * the character specifiers)
+ * 
+ * 
  */
 int _printf(const char *fstr, ...)
 {
