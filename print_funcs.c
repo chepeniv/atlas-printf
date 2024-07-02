@@ -10,6 +10,7 @@
  * for the character's value, the prints the character when necessary in
  * the _printf function. After printing, the memory is then freed.
  *
+ * @param: pointer to printable character
  */
 
 int print_char(void *param)
