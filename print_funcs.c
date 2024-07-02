@@ -31,6 +31,11 @@ int print_char(void *param)
 
 /**
  * print_str - prints a string
+ *
+ * Description: this function accepts a pointer to a string.
+ * if the string is NULL it prints "(null)"
+ * This function iterates through the string one character at a time
+ * and prints them using _putchar.
  */
 int print_str(void *param)
 {
