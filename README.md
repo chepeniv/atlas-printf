@@ -11,3 +11,17 @@ While the original printf uses a switch-case, our version calls a function that 
 
 Flowchart: Attached below is a flowchart following the step by step process in which our Printf mimic runs.
 ![printf-presentation-flowchart](https://github.com/chepeniv/atlas-printf/assets/155486318/46540ef5-4d67-4718-aafa-8dc550688ee6)
+
+Following is an example of _printf applied in a hypothetical main function.
+	#include "main.h"
+
+	int main(void)
+	{
+		int len;
+
+		len = _printf("outputs: %c; %s; %d; %i\n", 'A', "tqbfjotld", 98, INT_MIN);
+
+		return (int);
+	}
+
+Authors: Chepe & Torin
