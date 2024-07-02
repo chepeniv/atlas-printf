@@ -20,13 +20,13 @@ int print_char(void *param)
 	char *cptr;
 	char c;
 
-	cptr = malloc(sizeof(void*));
+	cptr = malloc(sizeof(void *));
 	*cptr = (size_t) param;
 	c = *cptr;
 	free(cptr);
 
 	_putchar(c);
-	return 1;
+	return (1);
 }
 
 int print_str(void *param)
