@@ -12,7 +12,8 @@ _printf \- a minimal emulation of the classic printf function.
 .fi
 
 .SH DESCRIPTION
-This minimal implementation of printf takes a mandatory format string and optional arguments that are printed out to stdout in accordance with what the format string dictates. It returns an positive int upon success.
+This minimal implementation of printf takes a mandatory format string and optional arguments
+that are printed out to stdout in accordance with what the format string dictates. It returns an positive int upon success.
 
 .SS Flag characters
 (unimplemented)
@@ -27,10 +28,11 @@ This minimal implementation of printf takes a mandatory format string and option
 (unimplemented)
 
 .SS Conversion specifiers
-In the format string after each % if one of the following characters is encountered then _printf will attempt to print out the type specified by the letter from. 
+In the format string after each % if one of the following characters is encountered then _printf will
+attempt to print out the type specified by the letter from.
 .TP
 .BR d , " i"
-these specifiers tell printf to take the next argument and output it as a base-ten numeral 
+these specifiers tell printf to take the next argument and output it as a base-ten numeral
 .TP
 .B c
 this specifier tells printf to take the next argument and output it as a character
@@ -39,7 +41,8 @@ this specifier tells printf to take the next argument and output it as a charact
 this specifier tells printf to take the next argument and output it as a string
 
 .SH RETURN VALUE
-Our implementation, upon successful write-out to stdout, will simply return the total number of characters printed excluding the null-byte. If an error occurs, then _printf will just return \-1.
+Our implementation, upon successful write-out to stdout, will simply return the total number
+of characters printed excluding the null-byte. If an error occurs, then _printf will just return \-1.
 
 .SH CONFORMING TO
 Betty Style, Nicole Standards
@@ -48,7 +51,8 @@ Betty Style, Nicole Standards
 This implementation of printf came about as a group project for first trimester students at Tulsa Atlas School.
 
 .SH BUGS
-Since behaviour pretty much duplicates regular printf, any of its bugs are pretty much guaranteed to be duplicated as well. There may exist other bugs, but they remain to be discovered.
+Since behaviour pretty much duplicates regular printf, any of its bugs are pretty much guaranteed to be
+duplicated as well. There may exist other bugs, but they remain to be discovered.
 
 .SH EXAMPLES
 the following would output string formated with a char, string, and two integers to stdout :
