@@ -2,14 +2,15 @@
 #define MAIN_H
 
 /**
- * _formater - this is a struct to be utilized in our code
+ * struct _formater - this is a struct to be utilized in our code
  * it sets a char for expected type and points to a printer function
  * 
  * @type: the character indicating format/ datatype
  * 
  * @printer: pointer to function that prints as applicable by type
  */
-typedef struct _formater {
+typedef struct _formater
+{
 	char type;
 	int (*printer)(void *);
 } formater;
