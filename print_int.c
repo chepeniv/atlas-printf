@@ -18,7 +18,7 @@ int print_int(int n)
 		if (n / 10)
 			total += print_int(-(n / 10));
 		total += _putchar(-(n % 10) + '0');
-		return total;
+		return (total);
 	}
 	if (n == 0)
 	{
