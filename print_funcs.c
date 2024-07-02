@@ -41,6 +41,7 @@ int print_char(void *param)
  *
  * Return: The function return the number of characters printed
  */
+
 int print_str(void *param)
 {
 	char c;
@@ -60,6 +61,10 @@ int print_str(void *param)
 	return (total);
 }
 
+/**
+ * print_dec - prints an int as a decimal
+ * 
+ */
 int print_dec(void *param)
 {
 	int n = (size_t) param;
