@@ -37,6 +37,8 @@ int print_char(void *param)
  * This function iterates through the string one character at a time
  * and prints them using _putchar.
  * 
+ * @param: the parameter for print_str; a pointer to the string to be printed
+ * 
  * Return: The function return the number of characters printed
  */
 int print_str(void *param)
