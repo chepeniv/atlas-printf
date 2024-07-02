@@ -6,6 +6,9 @@
 /**
  * _printf - the main function that aims to recreate
  * the standard printf function.
+ * 
+ * Description: Function _printf is designed to mimic standard printf.
+ * It is built to handle specifying tokens %s, %d, %c, and %i.
  */
 int _printf(const char *fstr, ...)
 {
